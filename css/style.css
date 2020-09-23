@@ -42,8 +42,12 @@ nav section:first-child {
 .nav-dx div {
   display: inline-block;
 }
-
-/* proprieta nav seconda sezione */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* proprietà nav seconda sezione */
 nav section:last-child {
   height: 80px;
   line-height: 80px;
@@ -52,4 +56,24 @@ nav section:last-child {
   text-decoration: none;
   color: black;
   margin: 0 8px;
+}
+/* proprietà intestazione */
+header {
+  background-image: url(../img/jumbotron.png);
+  background-size: cover;
+  /* debug */
+  height: 695px;
+}
+.header-prima div {
+  max-width: 450px;
+}
+.header-prima h1 {
+  font-size: 40px;
+}
+.header-prima p {
+  margin: 40px 0;
+}
+#confine {
+  height: 80px;
+  background-color: #afebe4;
 }
