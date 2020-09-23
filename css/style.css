@@ -76,4 +76,21 @@ header {
 #confine {
   height: 80px;
   background-color: #afebe4;
+  border-bottom: 3px solid #33475C;
 }
+/* proprietà main */
+main {
+  background-color: #F5F8FA;
+  /* debug */
+  height: 500px;
+}
+/* main prima sezione */
+.main-sez-prima {
+  height: 283px;
+  text-align: center;
+}
+.main-sez-prima img {
+  margin-top: 40px;
+  width: 150px;
+}
+/* main seconda sezione */
