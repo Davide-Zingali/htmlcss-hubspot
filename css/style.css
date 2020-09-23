@@ -28,6 +28,7 @@
 nav section:first-child {
   background-color: #f4f9fd;
   height: 80px;
+  border-bottom: 1px solid black;
 }
 .navigatore {
   line-height: 80px;
@@ -40,4 +41,15 @@ nav section:first-child {
 }
 .nav-dx div {
   display: inline-block;
+}
+
+/* proprieta nav seconda sezione */
+nav section:last-child {
+  height: 80px;
+  line-height: 80px;
+}
+.nav-collegamenti a {
+  text-decoration: none;
+  color: black;
+  margin: 0 8px;
 }
