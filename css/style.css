@@ -1,0 +1,43 @@
+/* regola generale */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#bottone {
+  border: 1px solid #fe775a;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: white;
+  color: #fe775a;
+  text-decoration: none;
+}
+.bottone {
+  border: 1px solid #fe775a;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #fe775a;
+  color: white;
+  text-decoration: none;
+}
+.margine {
+  margin: 0 15%;
+}
+
+/* proprietà nav prima sezione */
+nav section:first-child {
+  background-color: #f4f9fd;
+  height: 80px;
+}
+.navigatore {
+  line-height: 80px;
+}
+.nav-sx {
+  float: left;
+}
+.nav-dx {
+  float: right;
+}
+.nav-dx div {
+  display: inline-block;
+}
