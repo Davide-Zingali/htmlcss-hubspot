@@ -91,7 +91,7 @@ header {
 main {
   background-color: #F5F8FA;
   /* debug */
-  min-height: 1500px;
+  min-height: 1000px;
 }
 
 /* main prima sezione */
@@ -110,10 +110,10 @@ main {
   border-radius: 6px;
   height: 200px;
   position: relative;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .icona-main {
-  width: 100px;
+  max-height: 100px;
 }
 #main-sex-due-sx {
   float: left;
@@ -158,3 +158,45 @@ main {
 .col-main hr {
   margin: 40px 0;
 }
+.main-sez-tre {
+  padding: 40px 0;
+}
+/* proprietà main quarta sezione */
+.main-sez-quattro {
+  background: #00ADB4;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+/* parte inferiore main sez quattro */
+.row-quattro-su:after, .row-quattro-giù:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row-quattro-su div:nth-child(1), .row-quattro-su div:nth-child(2), .row-quattro-su div:nth-child(3), .row-quattro-giù div:nth-child(1), .row-quattro-giù div:nth-child(2), .row-quattro-giù div:nth-child(3) {
+  border-right: 1px solid white;
+}
+.row-quattro-giù {
+  border-top: 1px solid white;
+}
+.row-quattro-su div, .row-quattro-giù div {
+  float: left;
+  padding: 15px 0;
+  width: calc(100% / 4);
+  min-height: 130px;
+}
+.main-sez-quattro-giù {
+  margin: 40px 0;
+}
+/* da modificare interamente */
+#provaa {
+  position: relative;
+}
+aside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* proprietà main sezione quinta */
