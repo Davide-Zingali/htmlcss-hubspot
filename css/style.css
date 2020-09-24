@@ -91,7 +91,7 @@ header {
 main {
   background-color: #F5F8FA;
   /* debug */
-  height: 500px;
+  min-height: 1500px;
 }
 
 /* main prima sezione */
@@ -109,18 +109,52 @@ main {
   background-color: white;
   border-radius: 6px;
   height: 200px;
+  position: relative;
+  margin-bottom: 50px;
 }
 .icona-main {
   width: 100px;
 }
 #main-sex-due-sx {
+  float: left;
   width: 30%;
   height: 100%;
-  display: inline-block;
   position: relative;
 }
 #main-sez-due-dx {
-  width: 69%;
-  display: inline-block;
-  /* margin-right: 10%; */
+  float: left;
+  width: 70%;
+  padding-right: 80px;
+}
+.main-sez-due:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* proprietà main sezione terza */
+.sez-terza-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col-main {
+  float: left;
+  width: calc(100% / 3 - 40px);
+  background-color: white;
+  padding: 20px 40px;
+  text-align: center;
+  /* debug */
+  margin: 0 20px;
+  min-height: 500px;
+}
+.col-giù ul {
+  text-align: left;
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+.col-main h3 {
+  margin: 15px 0;
+}
+.col-main hr {
+  margin: 40px 0;
 }
