@@ -23,6 +23,12 @@
 .margine {
   margin: 0 15%;
 }
+.centratura {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
 
 /* proprietà nav prima sezione */
 nav section:first-child {
@@ -47,6 +53,7 @@ nav section:first-child {
   display: table;
   clear: both;
 }
+
 /* proprietà nav seconda sezione */
 nav section:last-child {
   height: 80px;
@@ -57,6 +64,7 @@ nav section:last-child {
   color: black;
   margin: 0 8px;
 }
+
 /* proprietà intestazione */
 header {
   background-image: url(../img/jumbotron.png);
@@ -78,12 +86,14 @@ header {
   background-color: #afebe4;
   border-bottom: 3px solid #33475C;
 }
+
 /* proprietà main */
 main {
   background-color: #F5F8FA;
   /* debug */
   height: 500px;
 }
+
 /* main prima sezione */
 .main-sez-prima {
   height: 283px;
@@ -93,4 +103,24 @@ main {
   margin-top: 40px;
   width: 150px;
 }
+
 /* main seconda sezione */
+.main-sez-due {
+  background-color: white;
+  border-radius: 6px;
+  height: 200px;
+}
+.icona-main {
+  width: 100px;
+}
+#main-sex-due-sx {
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+#main-sez-due-dx {
+  width: 69%;
+  display: inline-block;
+  /* margin-right: 10%; */
+}
