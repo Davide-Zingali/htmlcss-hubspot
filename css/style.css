@@ -29,7 +29,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   }
-
 /* proprietà nav prima sezione */
 nav section:first-child {
   background-color: #f4f9fd;
@@ -131,6 +130,7 @@ main {
   display: table;
   clear: both;
 }
+
 /* proprietà main sezione terza */
 .sez-terza-main:after {
   content: "";
@@ -161,6 +161,7 @@ main {
 .main-sez-tre {
   padding: 40px 0;
 }
+
 /* proprietà main quarta sezione */
 .main-sez-quattro {
   background: #00ADB4;
@@ -168,6 +169,7 @@ main {
   padding: 40px 0;
   text-align: center;
 }
+
 /* parte inferiore main sez quattro */
 .row-quattro-su:after, .row-quattro-giù:after {
   content: "";
@@ -199,4 +201,46 @@ aside {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 /* proprietà main sezione quinta */
+.row-main-sez5 {
+  margin: 30px 0;
+}
+.row-main-sez5:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row-main-sez5 > div {
+  float: left;
+}
+.col-main-sez5-sx {
+  width: 40%;
+}
+.col-main-sez5-dx {
+  width: 60%;
+}
+.col-main-sez5-dx img {
+  width: 75px;
+  float: left;
+}
+.col-main-sez5-dx div:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+
+/* row2-sez5-main */
+.row2-main-sez5 > div {
+  width: 50%;
+  float: left;
+}
+.row2-main-sez5 img {
+  padding-left: 200px;
+  max-width: 100%;
+}
+.row2-main-sez5:after {
+  content: "";
+  display: table;
+  clear: both;
+}
