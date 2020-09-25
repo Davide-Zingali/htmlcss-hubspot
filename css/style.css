@@ -54,19 +54,21 @@ nav section:first-child {
 }
 
 /* proprietà nav seconda sezione */
-nav section:last-child {
+#nav-fixed {
   height: 80px;
   line-height: 80px;
+  background-color: white;
+  height: 80px;
+  z-index: 600;
+  position: sticky;
+  top: 0;
 }
 .nav-collegamenti a {
   text-decoration: none;
   color: black;
   margin: 0 8px;
 }
-#nav-fixed {
-  position: sticky;
-  top: 0;
-}
+
 /* proprietà intestazione */
 header {
   background-image: url(../img/jumbotron.png);
