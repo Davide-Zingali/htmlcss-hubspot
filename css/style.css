@@ -29,6 +29,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 /* proprietà nav prima sezione */
 nav section:first-child {
   background-color: #f4f9fd;
@@ -46,11 +51,6 @@ nav section:first-child {
 }
 .nav-dx div {
   display: inline-block;
-}
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* proprietà nav seconda sezione */
@@ -125,18 +125,8 @@ main {
   width: 70%;
   padding-right: 80px;
 }
-.main-sez-due:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 /* proprietà main sezione terza */
-.sez-terza-main:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .col-main {
   float: left;
   width: calc(100% / 3 - 40px);
@@ -171,11 +161,6 @@ main {
 }
 
 /* parte inferiore main sez quattro */
-.row-quattro-su:after, .row-quattro-giù:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .row-quattro-su div:nth-child(1), .row-quattro-su div:nth-child(2), .row-quattro-su div:nth-child(3), .row-quattro-giù div:nth-child(1), .row-quattro-giù div:nth-child(2), .row-quattro-giù div:nth-child(3) {
   border-right: 1px solid white;
 }
@@ -206,11 +191,6 @@ aside {
 .row-main-sez5 {
   margin: 30px 0;
 }
-.row-main-sez5:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .row-main-sez5 > div {
   float: left;
 }
@@ -239,8 +219,48 @@ aside {
   padding-left: 200px;
   max-width: 100%;
 }
-.row2-main-sez5:after {
-  content: "";
-  display: table;
-  clear: both;
+
+/* proprietà footer */
+footer {
+  background-color: #2D3E50;
+  padding: 35px 0;
+  /* debug */
+  min-height: 500px;
+  color: white;
+  font-size: 16px;
+}
+/* prima sezione footer */
+footer ul {
+  padding-right: 30px;
+  list-style-type: none;
+}
+footer li {
+  padding: 10px 0;
+}
+.col-footer {
+  width: calc(100% / 4);
+  float: left;
+}
+#link-lingua a {
+  text-decoration: none;
+  color: white;
+}
+.float-sx {
+  float: left;
+}
+.float-dx {
+  float: right;
+}
+#spazio-white {
+  word-spacing: 18px;
+}
+.row2-footer {
+  padding-top: 60px;
+}
+#link-lingua {
+  word-spacing: 15px;
+  text-align: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
 }
