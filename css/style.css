@@ -293,6 +293,9 @@ footer li {
   color: white;
   font-size: 10px;
 }
+#icone-social i:hover {
+  color: lightblue;
+}
 #bottone-footer {
   display: inline-block;
   border-radius: 3px;
