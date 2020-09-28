@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 30px;
 }
 #bottone {
   border: 1px solid #fe775a;
@@ -13,7 +15,7 @@
   text-decoration: none;
 }
 .bottone {
-  border: 1px solid #fe775a;
+  border: 1px solid red;
   border-radius: 3px;
   padding: 5px;
   background-color: #fe775a;
@@ -23,25 +25,41 @@
 .margine {
   margin: 0 15%;
 }
-.centratura {
+/* .centratura {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  }
-  .clearfix:after {
+  } */
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
   }
+h4 {
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 /* proprietà nav prima sezione */
 nav section:first-child {
   background-color: #f4f9fd;
-  height: 80px;
   border-bottom: 1px solid black;
+  padding: 28px 0;
 }
 .navigatore {
-  line-height: 80px;
+  /* line-height: 80px; */
+}
+.nav-sx span:first-child {
+  padding-right: 30px;
+  margin-right: 28px;
+  border-right: 1px solid black;
 }
 .nav-sx {
   float: left;
@@ -51,6 +69,7 @@ nav section:first-child {
 }
 .nav-dx div {
   display: inline-block;
+  padding-left: 20px;
 }
 
 /* proprietà nav seconda sezione */
@@ -58,25 +77,23 @@ nav section:first-child {
   height: 80px;
   line-height: 80px;
   background-color: white;
-  height: 80px;
   z-index: 600;
   position: sticky;
   top: 0;
 }
-.nav-collegamenti a {
-  text-decoration: none;
-  color: black;
-  margin: 0 8px;
+.nav-collegamenti li {
+  display: inline-block;
+  padding-left: 25px;
 }
 
 /* proprietà intestazione */
 header {
   background-image: url(../img/jumbotron.png);
   background-size: cover;
-  /* debug */
-  height: 695px;
+  padding: 50px 0;
+  min-height: 792px;
 }
-.header-prima div {
+.header-prima {
   max-width: 450px;
 }
 .header-prima h1 {
@@ -95,52 +112,73 @@ header {
 main {
   background-color: #F5F8FA;
   /* debug */
-  min-height: 1000px;
+  /* min-height: 1000px; */
+}
+.icona-main {
+  max-height: 100px;
+  margin-bottom: 30px;
 }
 
 /* main prima sezione */
 .main-sez-prima {
-  height: 283px;
   text-align: center;
+  padding: 50px 150px;
 }
 .main-sez-prima img {
-  margin-top: 40px;
   width: 150px;
 }
-
+/* ------------------------- */
 /* main seconda sezione */
 .main-sez-due {
   background-color: white;
+  padding: 50px 0;
   border-radius: 6px;
-  height: 200px;
-  position: relative;
+  /* debug */
+  /* height: 300px; */
+  /* position: relative; */
   /* margin-bottom: 50px; */
 }
-.icona-main {
-  max-height: 100px;
-}
-#main-sex-due-sx {
+#col-sx-main-sez2 {
   float: left;
   width: 30%;
-  height: 100%;
-  position: relative;
-}
-#main-sez-due-dx {
-  float: left;
-  width: 70%;
-  padding-right: 80px;
-}
-
-/* proprietà main sezione terza */
-.col-main {
-  float: left;
-  width: calc(100% / 3 - 40px);
-  background-color: white;
-  padding: 20px 40px;
   text-align: center;
   /* debug */
-  margin: 0 20px;
-  min-height: 500px;
+  /* height: 100%; */
+  /* position: relative; */
+}
+#col-dx-main-sez2 {
+  float: left;
+  width: 70%;
+  padding-right: 140px;
+}
+#col-dx-main-sez2 i {
+  padding-left: 25px;
+  padding-right: 13px;
+  color: #FF7A59;
+}
+/* --------------------------- */
+/* proprietà main sezione terza */
+.colonna-main {
+  float: left;
+  width: calc(100% / 3 - 36px);
+  background-color: white;
+  padding: 30px 40px;
+  text-align: center;
+  /* debug */
+  min-height: 700px;
+}
+.col1-main {
+  margin-right: 18px;
+}
+.col2-main {
+  margin: 0 36px;
+}
+.col3-main {
+  margin-left: 18px;
+}
+.main-sez-tre i {
+  padding-right: 10px;
+  color: #FF7A59;
 }
 .col-giù ul {
   text-align: left;
@@ -150,8 +188,8 @@ main {
 .col-main h3 {
   margin: 15px 0;
 }
-.col-main hr {
-  margin: 40px 0;
+.colonna-main hr {
+  margin: 90px 0 50px;
 }
 .main-sez-tre {
   padding: 40px 0;
@@ -201,6 +239,7 @@ aside {
 }
 .col-main-sez5-sx {
   width: 40%;
+  padding: 0 70px;
 }
 .col-main-sez5-dx {
   width: 60%;
@@ -260,10 +299,8 @@ footer li {
 }
 #bottone-footer a {
   color: black;
-  text-decoration: none;
 }
 #link-lingua a {
-  text-decoration: none;
   color: white;
 }
 .float-sx {
