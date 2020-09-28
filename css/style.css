@@ -9,33 +9,36 @@
 #bottone {
   border: 1px solid #fe775a;
   border-radius: 3px;
-  padding: 5px;
+  padding: 10px;
   background-color: white;
   color: #fe775a;
   text-decoration: none;
 }
+#hover a:hover {
+  background-color: #FFBCAC;
+  border-color: #FFBCAC;
+  color: white;
+}
 .bottone {
-  border: 1px solid red;
+  border: 1px solid #fe775a;
   border-radius: 3px;
-  padding: 5px;
+  padding: 10px;
   background-color: #fe775a;
   color: white;
   text-decoration: none;
 }
+.hover a:hover {
+  background-color: #FFBCAC;
+  border-color: #FFBCAC;
+  }
 .margine {
   margin: 0 15%;
 }
-/* .centratura {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  } */
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  content: "";
+  display: table;
+  clear: both;
+}
 h4 {
   margin-bottom: 30px;
 }
@@ -53,9 +56,6 @@ nav section:first-child {
   border-bottom: 1px solid black;
   padding: 28px 0;
 }
-.navigatore {
-  /* line-height: 80px; */
-}
 .nav-sx span:first-child {
   padding-right: 30px;
   margin-right: 28px;
@@ -71,11 +71,12 @@ nav section:first-child {
   display: inline-block;
   padding-left: 20px;
 }
-
+.navigatore.nav-sx a:hover {
+  color: gray;
+}
 /* proprietà nav seconda sezione */
 #nav-fixed {
   height: 80px;
-  line-height: 80px;
   background-color: white;
   z-index: 600;
   position: sticky;
@@ -84,8 +85,14 @@ nav section:first-child {
 .nav-collegamenti li {
   display: inline-block;
   padding-left: 25px;
+  line-height: 80px;
 }
-
+.nav-collegamenti a:hover {
+  color: gray;
+}
+.zinga {
+  line-height: 94px;
+}
 /* proprietà intestazione */
 header {
   background-image: url(../img/jumbotron.png);
@@ -111,8 +118,6 @@ header {
 /* proprietà main */
 main {
   background-color: #F5F8FA;
-  /* debug */
-  /* min-height: 1000px; */
 }
 .icona-main {
   max-height: 100px;
@@ -127,24 +132,16 @@ main {
 .main-sez-prima img {
   width: 150px;
 }
-/* ------------------------- */
 /* main seconda sezione */
 .main-sez-due {
   background-color: white;
   padding: 50px 0;
   border-radius: 6px;
-  /* debug */
-  /* height: 300px; */
-  /* position: relative; */
-  /* margin-bottom: 50px; */
 }
 #col-sx-main-sez2 {
   float: left;
   width: 30%;
   text-align: center;
-  /* debug */
-  /* height: 100%; */
-  /* position: relative; */
 }
 #col-dx-main-sez2 {
   float: left;
@@ -156,25 +153,31 @@ main {
   padding-right: 13px;
   color: #FF7A59;
 }
-/* --------------------------- */
 /* proprietà main sezione terza */
 .colonna-main {
   float: left;
-  width: calc(100% / 3 - 36px);
+  width: calc(100% / 3 - 28px);
   background-color: white;
-  padding: 30px 40px;
+  padding: 30px 30px;
   text-align: center;
+  border-radius: 5px;
   /* debug */
   min-height: 700px;
 }
+.test-hover {
+  transition: transform 1s ease;
+}
+.test-hover:hover {
+  transform: scale(1.1);
+}
 .col1-main {
-  margin-right: 18px;
+  margin-right: 14px;
 }
 .col2-main {
-  margin: 0 36px;
+  margin: 0 28px;
 }
 .col3-main {
-  margin-left: 18px;
+  margin-left: 14px;
 }
 .main-sez-tre i {
   padding-right: 10px;
@@ -210,7 +213,10 @@ main {
 .row-quattro-giù {
   border-top: 1px solid white;
 }
-.row-quattro-su div, .row-quattro-giù div {
+.row-quattro-su h2, .row-quattro-giù h2 {
+  line-height: 60px;
+}
+.row-quattro-su > div, .row-quattro-giù > div {
   float: left;
   padding: 15px 0;
   width: calc(100% / 4);
@@ -219,33 +225,28 @@ main {
 .main-sez-quattro-giù {
   margin: 40px 0;
 }
-/* da modificare interamente */
-#provaa {
-  position: relative;
-}
-aside {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 /* proprietà main sezione quinta */
 .row-main-sez5 {
-  margin: 30px 0;
+  margin: 70px 0;
 }
 .row-main-sez5 > div {
   float: left;
 }
+.col-main-sez5-sx h3 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
 .col-main-sez5-sx {
   width: 40%;
-  padding: 0 70px;
+  padding: 0 70px 0px 80px;
 }
 .col-main-sez5-dx {
   width: 60%;
 }
 .col-main-sez5-dx img {
-  width: 75px;
+  max-width: 130px;
+  padding: 15px 15px;
   float: left;
 }
 .col-main-sez5-dx div:after {
@@ -259,9 +260,12 @@ aside {
   width: 50%;
   float: left;
 }
+.col2-main-sez5-sx {
+  padding: 40px 50px 50px 0;
+}
 .row2-main-sez5 img {
   padding-left: 200px;
-  max-width: 100%;
+  width: 500px;
 }
 
 /* proprietà footer */
@@ -291,15 +295,17 @@ footer li {
 }
 #bottone-footer {
   display: inline-block;
-  border: 1px solid white;
   border-radius: 3px;
   padding: 5px;
   background-color: white;
   text-align: center;
-}
-#bottone-footer a {
   color: black;
 }
+#bottone-footer:hover {
+  background-color: gray;
+  color: white;
+}
+/* seconda sezione footer */
 #link-lingua a {
   color: white;
 }
@@ -321,4 +327,7 @@ footer li {
   padding-bottom: 18px;
   border-bottom: 1px solid white;
   margin-bottom: 30px;
+}
+#link-lingua a:hover {
+  color: gray;
 }
